@@ -189,6 +189,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             sessionManager.setUsername(null);
             startActivity(new Intent(getApplicationContext(), LoginRegisterActivity.class));
             finish();
+        }else if(item.getItemId() == R.id.nav_mathics){
+            startActivity(new Intent(this, PracticeActivity.class));
+            finish();
         }else if(item.getItemId() == R.id.nav_share){
 
         }else if(item.getItemId() == R.id.nav_rate){

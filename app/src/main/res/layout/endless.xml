@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFECC3A8"
+    android:backgroundTint="#FFECC3A8">
+
+    <ImageView
+        android:id="@+id/pause_button"
+        android:layout_width="48dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.895"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pause" />
+
+    <LinearLayout
+        android:layout_width="334dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4" />
+
+        <ImageView
+            android:id="@+id/heart_5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/heart" />
+
+        <ImageView
+            android:id="@+id/heart_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/heart" />
+
+        <ImageView
+            android:id="@+id/heart_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/heart" />
+
+        <ImageView
+            android:id="@+id/heart_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/heart" />
+
+        <ImageView
+            android:id="@+id/heart_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/heart" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="334dp"
+        android:layout_height="214dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="114dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginRight="39dp"
+        android:background="@drawable/round_layout"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:animateLayoutChanges="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtQuestionNum"
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-black"
+                android:gravity="left|center_horizontal|center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imgShield"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center|center_horizontal"
+                android:gravity="center_horizontal|center_vertical"
+                app:tint="#51D17F"
+                android:visibility="gone"
+                app:srcCompat="@drawable/safeguard" />
+
+            <TextView
+                android:id="@+id/txtCurrentScore"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="40"
+                android:fontFamily="sans-serif-black"
+                android:gravity="right|center_horizontal|center_vertical"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/white"
+            android:textSize="60sp" />
+
+        <ProgressBar
+            android:id="@+id/pbTime"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="292dp"
+            android:layout_height="76dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:progressDrawable="@drawable/progressbar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="410dp"
+        android:layout_height="375dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="338dp"
+            android:layout_height="182dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="10dp"
+                android:layout_height="125dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/round_button"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="60sp"
+                app:backgroundTint="#FF6B6B" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="10dp"
+                android:layout_height="125dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/round_button"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="60sp"
+                app:backgroundTint="#EE9A4D" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="338dp"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="10dp"
+                android:layout_height="125dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_button"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="60sp"
+                app:backgroundTint="#51D280" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3" />
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="10dp"
+                android:layout_height="125dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_button"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="60sp"
+                app:backgroundTint="#6BB8FF" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <RelativeLayout
+        android:id="@+id/overlayLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:visibility="gone">
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imgCountdown"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:visibility="gone"
+        app:srcCompat="@drawable/countdown_3"
+        tools:layout_editor_absoluteX="261dp"
+        tools:layout_editor_absoluteY="357dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

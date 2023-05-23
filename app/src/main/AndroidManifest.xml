@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
+        android:screenOrientation="portrait"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -12,6 +13,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Sarithmetics"
         tools:targetApi="31">
+        <activity
+            android:name=".PracticeSettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GameOverActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PauseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EndlessGameActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ShopActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PracticeActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:label=""

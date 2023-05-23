@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="#FFECC3A8"
+    android:backgroundTint="#FFECC3A8">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Powerups Shop"
+            android:textAlignment="center"
+            android:textColor="#FF6C594D"
+            android:textColorHighlight="#FF6C594D"
+            android:textColorHint="#FF6C594D"
+            android:textColorLink="#FF6C594D"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.907"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/vigor_button"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_button"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:typeface="normal"
+                app:backgroundTint="#FFDE60EA"
+                app:icon="@drawable/vigor"
+                app:iconGravity="textEnd"
+                app:iconPadding="0dp"
+                app:iconSize="100dp" />
+
+            <Space
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/safeguard_button"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_button"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:typeface="normal"
+                app:backgroundTint="#2CD66A"
+                app:icon="@drawable/safeguard"
+                app:iconGravity="textEnd"
+                app:iconPadding="0dp"
+                app:iconSize="100dp" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/frenzy_button"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_button"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:typeface="normal"
+                app:backgroundTint="#FFFF5426"
+                app:icon="@drawable/frenzy"
+                app:iconGravity="textEnd"
+                app:iconPadding="0dp"
+                app:iconSize="100dp" />
+
+            <Space
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/mystery_button"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_button"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:typeface="normal"
+                app:backgroundTint="#7452B1"
+                app:icon="@drawable/mystery"
+                app:iconGravity="textEnd"
+                app:iconPadding="0dp"
+                app:iconSize="100dp" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/txtCoins"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center|right"
+                android:text="0"
+                android:textColor="#FF6C594D"
+                android:textColorHighlight="#FF6C594D"
+                android:textColorHint="#FF6C594D"
+                android:textColorLink="#FF6C594D"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                app:srcCompat="@drawable/coins" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/overlayLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:visibility="gone"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="92dp">
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,4 +4,12 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="title_activity_items"></string>
+    <string name="vigor">Restores a single heart every 10 rounds.</string>
+    <string name="safeguard">Random chance to disable the wrong answer you have initially tapped and gives you a second chance.</string>
+    <string name="safeguard2">More chance to happen if you have lesser lives.</string>
+    <string name="frenzy">Start in question 100. Difficulty is automatically adjusted.</string>
+    <string name="frenzy2">Coins are doubled after every correct answer.</string>
+    <string name="mystery">Hides the text of one answer. Could be the correct or a wrong answer.</string>
+    <string name="mystery2">Coins are doubled after every correct answer.</string>
+    <string name="missing">Play more to earn more coins!</string>
 </resources>

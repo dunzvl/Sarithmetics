@@ -194,4 +194,84 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
             Toast.makeText(context, "Deletion Error", Toast.LENGTH_SHORT);
         }
     }
+
+    public boolean updateCoins(int coins) {
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        // Retrieve the current profileCurrency value
+        Cursor cursor = db.rawQuery("SELECT " + COL_PROFILE_CURRENCY + " FROM " + TABLE_PROFILE, null);
+        if (cursor.moveToFirst()) {
+            int columnIndex = cursor.getColumnIndex(COL_PROFILE_CURRENCY);
+            if (columnIndex != -1) {
+                int currentCurrency = cursor.getInt(columnIndex);
+                int newCurrency = currentCurrency + coins;
+
+                // Ensure the newCurrency stays within the range of 0 to 999
+                if (newCurrency < 0) {
+                    return false;
+                } else if (newCurrency > 999) {
+                    newCurrency = 999;
+                }
+
+                // Update the profileCurrency with the new value
+                ContentValues values = new ContentValues();
+                values.put(COL_PROFILE_CURRENCY, newCurrency);
+                db.update(TABLE_PROFILE, values, null, null);
+            }
+        }
+        cursor.close();
+        return true;
+    }
+
+
+    public int displayCoins() {
+        SQLiteDatabase db = this.getReadableDatabase();
+        int coins = 0;
+
+        // Retrieve the current profileCurrency value
+        Cursor cursor = db.rawQuery("SELECT " + COL_PROFILE_CURRENCY + " FROM " + TABLE_PROFILE, null);
+        if (cursor.moveToFirst()) {
+            int columnIndex = cursor.getColumnIndex(COL_PROFILE_CURRENCY);
+            if (columnIndex != -1) {
+                coins = cursor.getInt(columnIndex);
+            }
+        }
+        cursor.close();
+
+        return coins;
+    }
+
+    public boolean updateHighScore(int score) {
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        // Retrieve the current profileCurrency value
+        Cursor cursor = db.rawQuery("SELECT " + COL_PROFILE_HIGH_SCORE + " FROM " + TABLE_PROFILE, null);
+        if (cursor.moveToFirst()) {
+            int columnIndex = cursor.getColumnIndex(COL_PROFILE_HIGH_SCORE);
+            if (columnIndex != -1) {
+                    ContentValues values = new ContentValues();
+                    values.put(COL_PROFILE_HIGH_SCORE, score);
+                    db.update(TABLE_PROFILE, values, null, null);
+                }
+            }
+        cursor.close();
+        return true;
+    }
+
+    public int displayHighScore() {
+        SQLiteDatabase db = this.getReadableDatabase();
+        int highScore = 0;
+
+        // Retrieve the current profileCurrency value
+        Cursor cursor = db.rawQuery("SELECT " + COL_PROFILE_HIGH_SCORE + " FROM " + TABLE_PROFILE, null);
+        if (cursor.moveToFirst()) {
+            int columnIndex = cursor.getColumnIndex(COL_PROFILE_HIGH_SCORE);
+            if (columnIndex != -1) {
+                highScore = cursor.getInt(columnIndex);
+            }
+        }
+        cursor.close();
+
+        return highScore;
+    }
 }

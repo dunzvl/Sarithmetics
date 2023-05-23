@@ -3,6 +3,9 @@ package com.example.sarithmetics;
 import android.content.Context;
 import android.content.SharedPreferences;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class SessionManager {
     SharedPreferences sharedPreferences;
     SharedPreferences.Editor editor;
@@ -34,4 +37,14 @@ public class SessionManager {
         return sharedPreferences.getBoolean("key_mainstatus", false);
     }
 
+    public void addPowerups(String buttonId) {
+        Set<String> selectedPowerups = getPowerups();
+        selectedPowerups.add(buttonId);
+        editor.putStringSet("powerups", selectedPowerups);
+        editor.apply();
+    }
+
+    public Set<String> getPowerups() {
+        return sharedPreferences.getStringSet("powerups", new HashSet<>());
+    }
 }

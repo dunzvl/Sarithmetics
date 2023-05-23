@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFECC3A8"
+    android:backgroundTint="#FFECC3A8">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="100dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Practice"
+            android:textColor="#6C594D"
+            android:textColorHighlight="#FF6C594D"
+            android:textColorHint="#FF6C594D"
+            android:textColorLink="#FF6C594D"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.907"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/pracsettings_button"
+            android:layout_width="347dp"
+            android:layout_height="150dp"
+            android:background="@drawable/round_button"
+            android:fontFamily="sans-serif-black"
+            android:gravity="right|center"
+            android:text="Custom Game"
+            android:textSize="20sp"
+            android:typeface="normal"
+            app:backgroundTint="#A36439"
+            app:icon="@drawable/gear"
+            app:iconPadding="8dp"
+            app:iconSize="100dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <Button
+            android:id="@+id/play_button"
+            android:layout_width="347dp"
+            android:layout_height="150dp"
+            android:background="@drawable/round_button"
+            android:fontFamily="sans-serif-black"
+            android:gravity="right|center"
+            app:backgroundTint="#A36439"
+            android:text="Quick Play"
+            android:textSize="20sp"
+            android:typeface="normal"
+            app:icon="@drawable/play"
+            app:iconSize="100dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <Button
+            android:id="@+id/shop_button"
+            android:layout_width="347dp"
+            android:layout_height="150dp"
+            android:background="@drawable/round_button"
+            android:fontFamily="sans-serif-black"
+            android:gravity="right|center"
+            app:backgroundTint="#A36439"
+            android:text="Powerups Shop"
+            android:textSize="20sp"
+            android:typeface="normal"
+            app:icon="@drawable/shop"
+            app:iconSize="100dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

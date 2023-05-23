@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFECC3A8"
+    android:backgroundTint="#FFECC3A8">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="347dp"
+        android:layout_height="633dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_vertical"
+            android:layout_marginTop="136dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Pause"
+            android:textColor="#FF6C594D"
+            android:textColorHighlight="#FF6C594D"
+            android:textColorHint="#FF6C594D"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.907"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="70dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/resume_button"
+                android:layout_width="wrap_content"
+                android:layout_height="140dp"
+                android:background="@drawable/rounder_button"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:typeface="normal"
+                app:icon="@drawable/play"
+                app:iconPadding="0dp"
+                app:backgroundTint="#A36439"
+                app:iconSize="100dp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/stop_button"
+                android:layout_width="wrap_content"
+                android:layout_height="140dp"
+                android:background="@drawable/rounder_button"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:typeface="normal"
+                app:icon="@drawable/stop"
+                app:iconGravity="end"
+                app:iconPadding="0dp"
+                app:backgroundTint="#A36439"
+                app:iconSize="100dp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

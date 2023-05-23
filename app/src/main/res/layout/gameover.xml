@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFECC3A8"
+    android:backgroundTint="#FFECC3A8">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_vertical"
+            android:fontFamily="sans-serif-black"
+            android:text="Game Over"
+            android:textColor="#FF6C594D"
+            android:textColorHighlight="#FF6C594D"
+            android:textColorHint="#FF6C594D"
+            android:textColorLink="#FF6C594D"
+            android:textSize="48sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.907"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/txtScoretext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_vertical"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="Gained Coins:"
+            android:textAlignment="center"
+            android:textColor="#FF6C594D"
+            android:textColorHighlight="#FF6C594D"
+            android:textColorHint="#FF6C594D"
+            android:textColorLink="#FF6C594D"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.907"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/txtScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-black"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="#FF6C594D"
+                android:textColorHighlight="#FF6C594D"
+                android:textColorHint="#FF6C594D"
+                android:textColorLink="#FF6C594D"
+                android:textSize="48sp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="10dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/coins" />
+
+            <Space
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:id="@+id/txtScoretext2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_vertical"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="High Score:"
+            android:textAlignment="center"
+            android:textColor="#FF6C594D"
+            android:textColorHighlight="#FF6C594D"
+            android:textColorHint="#FF6C594D"
+            android:textColorLink="#FF6C594D"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.907"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/txtHighScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-black"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="#FF6C594D"
+                android:textColorHighlight="#FF6C594D"
+                android:textColorHint="#FF6C594D"
+                android:textColorLink="#FF6C594D"
+                android:textSize="48sp" />
+
+            <Space
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/playagain_button"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_button"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:text="Play Again"
+                android:textSize="20sp"
+                android:typeface="normal"
+                app:backgroundTint="#A36439"/>
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/goback_button"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_button"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:text="Go Back"
+                android:textSize="20sp"
+                android:typeface="normal"
+                app:backgroundTint="#A36439"/>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
